@@ -1501,16 +1501,20 @@
                 min-height: 100vh;
                 min-height: 100dvh;
                 text-align: center;
-                padding: 90px 24px 50px;
+                padding: 50px 24px 40px;
                 justify-content: flex-start;
                 overflow: hidden
             }
 
             .hero-banner .hero-copy {
+                display: flex;
+                flex-direction: column;
                 align-items: center;
                 width: 100%;
                 max-width: 360px;
-                margin: 0 auto
+                margin: 0 auto;
+                min-height: calc(100vh - 90px);
+                min-height: calc(100dvh - 90px)
             }
 
             .hero-banner .eb {
@@ -1525,7 +1529,7 @@
                 line-height: 1.15;
                 white-space: normal;
                 max-width: 340px;
-                margin: 14px auto 18px;
+                margin: 14px auto 0;
                 letter-spacing: -.01em
             }
 
@@ -1533,7 +1537,7 @@
                 font-size: 16px;
                 line-height: 1.55;
                 max-width: 320px;
-                margin: 150px auto 16px;
+                margin: auto 0 16px !important;
                 color: rgba(253, 249, 242, .9)
             }
 
@@ -1542,7 +1546,7 @@
                 font-size: 12px;
                 letter-spacing: .14em;
                 width: auto;
-                margin-top: 20px !important
+                margin-top: 0 !important
             }
         }
     </style>
