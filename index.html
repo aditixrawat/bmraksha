@@ -468,14 +468,13 @@
 
         @media(max-width:600px) {
             .ttc {
-                height: auto;
-                min-height: auto;
-                padding: 20px 14px 40px;
-                overflow: visible;
+                min-height: 100vh;
+                min-height: 100dvh;
+                padding: 40px 14px;
+                overflow: hidden;
                 flex-direction: column;
-                justify-content: flex-start;
+                justify-content: center;
                 gap: 16px;
-                padding-top: 60px;
                 will-change: transform
             }
 
@@ -483,14 +482,17 @@
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: center;
-                gap: 10px
+                justify-content: center;
+                gap: 28px;
+                width: 100%
             }
 
             .ttc-col {
                 flex-direction: row;
                 flex-wrap: nowrap;
                 align-items: center;
-                gap: 10px;
+                justify-content: center;
+                gap: 28px;
                 max-width: 100%
             }
 
@@ -500,8 +502,8 @@
 
             .ttc-titlecard-mobile {
                 display: block;
-                max-width: 280px;
-                margin: 0 auto 22px;
+                max-width: 350px;
+                margin: 0 auto 28px;
                 text-align: center;
                 opacity: 1;
                 transform: none
@@ -512,31 +514,39 @@
             }
 
             .ttc-titlecard-mobile .ttc-h1 {
-                font-size: 20px;
-                line-height: 1.2;
-                margin: 0 0 8px;
-                max-width: 280px
+                font-size: clamp(28px, 7.5vw, 36px);
+                line-height: 1.18;
+                margin: 0 0 12px;
+                max-width: 340px
             }
 
             .ttc-titlecard-mobile .ttc-sub {
                 display: block;
-                font-size: 12px;
-                line-height: 1.45;
-                max-width: 280px;
-                margin: 0 auto
+                font-size: 15px;
+                line-height: 1.55;
+                max-width: 330px;
+                margin: 0 auto;
+                color: rgba(253, 249, 242, .88)
+            }
+
+            .ttc-watch-wrap {
+                flex: 1 1 48%;
+                max-width: 48vw;
+                display: flex;
+                justify-content: center
             }
 
             .ttc-watch {
-                width: 38vw;
-                max-width: 150px;
-                flex-shrink: 0
+                width: 100%;
+                max-width: 220px
             }
 
             .ttc-panel {
+                flex: 1 1 48%;
+                max-width: 48vw;
                 align-items: flex-start;
                 text-align: left;
-                gap: 8px;
-                max-width: 52vw
+                gap: 8px
             }
 
             .ttc-panel::before {
