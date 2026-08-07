@@ -479,20 +479,19 @@
             }
 
             .ttc-stage {
-                flex-direction: row;
-                flex-wrap: nowrap;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 28px;
+                gap: 24px;
                 width: 100%
             }
 
             .ttc-col {
-                flex-direction: row;
-                flex-wrap: nowrap;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                gap: 28px;
+                gap: 24px;
+                width: 100%;
                 max-width: 100%
             }
 
@@ -530,23 +529,28 @@
             }
 
             .ttc-watch-wrap {
-                flex: 1 1 54%;
-                max-width: 54vw;
+                width: 100%;
+                max-width: 350px;
+                flex: 0 0 auto;
                 display: flex;
                 justify-content: center
             }
 
             .ttc-watch {
                 width: 100%;
-                max-width: 280px
+                min-width: 320px;
+                max-width: 350px;
+                flex-shrink: 0;
+                overflow: hidden;
+                border-radius: 12px
             }
 
             .ttc-panel {
-                flex: 1 1 42%;
-                max-width: 42vw;
-                align-items: flex-start;
-                text-align: left;
-                gap: 8px
+                width: 100%;
+                max-width: 350px;
+                align-items: center;
+                text-align: center;
+                gap: 12px
             }
 
             .ttc-panel::before {
@@ -554,12 +558,16 @@
             }
 
             .ttc-label {
-                font-size: 9px
+                font-size: 10px;
+                text-align: center;
+                width: 100%
             }
 
             .ttc-selectors {
                 flex-wrap: wrap;
-                gap: 6px
+                justify-content: center;
+                gap: 6px;
+                width: 100%
             }
 
             .ttc-selectors select {
@@ -569,11 +577,20 @@
 
             .ttc-results {
                 min-height: auto;
+                align-items: center;
+                text-align: center;
+                width: 100%;
                 gap: 2px
             }
 
+            .ttc-figure {
+                justify-content: center;
+                width: 100%
+            }
+
             .ttc-lede {
-                font-size: 10px
+                font-size: 10px;
+                text-align: center
             }
 
             .ttc-num {
@@ -589,9 +606,10 @@
             }
 
             .ttc-cta {
-                margin-top: 4px;
-                padding: 8px 14px;
-                font-size: 9px
+                margin: 6px auto 0;
+                padding: 10px 18px;
+                font-size: 10px;
+                text-align: center
             }
         }
 
@@ -1233,15 +1251,101 @@
         }
 
         @media(max-width:860px) {
+            .gm-split, .gm-left, .gm-qstage {
+                width: 100% !important;
+                max-width: 100% !important
+            }
+
+            .gm {
+                padding: 50px 16px;
+                min-height: 100vh;
+                min-height: 100dvh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center
+            }
+
+            .gm-head {
+                max-width: 360px;
+                margin: 0 auto 28px
+            }
+
+            .gm-eyebrow {
+                font-size: 12.5px;
+                letter-spacing: .24em
+            }
+
+            .gm-h2 {
+                font-size: clamp(28px, 7.5vw, 38px);
+                line-height: 1.18;
+                white-space: normal;
+                margin: 12px auto 14px;
+                max-width: 340px
+            }
+
+            .gm-sub {
+                font-size: 15px;
+                line-height: 1.55;
+                max-width: 330px;
+                margin: 0 auto
+            }
+
+            .gm-emo {
+                font-size: 15px;
+                margin-top: 10px
+            }
+
+            .gm-qlabel {
+                font-size: 22px;
+                margin-bottom: 20px
+            }
+
+            .gm-q {
+                width: 100% !important;
+                max-width: 100% !important;
+                align-items: center
+            }
+
             .gm-cards {
-                grid-template-columns: 1fr 1fr
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 16px !important;
+                width: 100% !important;
+                max-width: 480px !important;
+                padding: 0 4px !important;
+                margin: 0 auto !important
+            }
+
+            .gm-card {
+                height: auto !important;
+                min-height: 200px !important;
+                aspect-ratio: 3 / 4.2 !important;
+                border-radius: 14px !important
+            }
+
+            .gm-card span {
+                font-size: clamp(17px, 4.8vw, 21px) !important;
+                left: 16px !important;
+                bottom: 16px !important;
+                font-weight: 700 !important;
+                white-space: normal !important;
+                line-height: 1.2 !important
+            }
+
+            .gm-chip {
+                padding: 14px 22px;
+                font-size: 14px
+            }
+
+            .gm-seg {
+                padding: 16px 20px;
+                font-size: 14px
             }
 
             .gm-preview img {
                 width: 34%
             }
-
-
 
             .gm-results {
                 justify-content: flex-start;
@@ -1271,13 +1375,13 @@
             }
 
             .gm-pcard {
-                flex: 0 0 160px;
-                max-width: 160px;
-                padding: 12px
+                flex: 0 0 170px;
+                max-width: 170px;
+                padding: 14px
             }
 
             .gm-pcard .frame {
-                height: 95px
+                height: 105px
             }
         }
 
