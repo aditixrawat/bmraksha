@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Geist:wght@300;400&display=swap');
+:root{
+--font-serif-display:"DM Serif Display",ui-serif,Georgia,"Times New Roman",serif;
+--font-sans:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+--font-label:Geist,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+/* type scale — exact sizes observed in the source, not snapped to a grid */
+--text-display-xl:54px;   /* section headlines: "Our mission", "Our collections" */
+--text-display-lg:48px;   /* quote headline */
+--text-display-md:44px;   /* "Drops, restocks, no noise." */
+--text-display-sm:24px;   /* "Let customers speak for us" */
+--text-heading-lg:60px;   /* "An honest premium." hero statement */
+--text-heading-md:16px;   /* footer column heading "Shop" */
+--text-body-lg:18px;      /* mission subhead */
+--text-body-md:16px;      /* review copy */
+--text-body-sm:14px;      /* nav links, form copy */
+--text-body-xs:13px;      /* utility nav (Men/Women/Home) */
+--text-caption:12px;      /* subscribe button, quote attribution */
+--text-caption-sm:11px;   /* fine print, ownership eyebrow */
+
+--leading-tight:1.04;     /* display headlines */
+--leading-snug:1.15;
+--leading-normal:1.4;
+--leading-relaxed:1.65;   /* body copy */
+
+--tracking-tight:-0.025em; /* display headlines */
+--tracking-normal:0;
+--tracking-wide:0.08em;    /* small uppercase labels e.g. Newsletter */
+--tracking-wider:0.22em;   /* JAPANESE / QUARTZ / REFINED strip */
+--tracking-widest:0.26em;  /* BUY NOW pill */
+
+--weight-regular:400;
+--weight-medium:500;
+--weight-semibold:600;
+--weight-bold:700;
+}

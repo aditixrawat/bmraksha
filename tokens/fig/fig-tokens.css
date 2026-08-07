@@ -1,0 +1,676 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --color-azure-50: rgb(0,117,255); /* @kind color */
+  --color-black-0-2: rgba(0,0,0,0); /* @kind color */
+  --color-black-0-3: rgba(0,0,0,0); /* @kind color */
+  --color-black-0: rgba(0,0,0,0); /* @kind color */
+  --color-black-10-2: rgba(0,0,0,0.1); /* @kind color */
+  --color-black-10: rgba(0,0,0,0.1); /* @kind color */
+  --color-black-15: rgba(0,0,0,0.15); /* @kind color */
+  --color-black-25: rgba(0,0,0,0.25); /* @kind color */
+  --color-black-30: rgba(0,0,0,0.3); /* @kind color */
+  --color-black-35: rgba(0,0,0,0.35); /* @kind color */
+  --color-black-50-2: rgba(0,0,0,0.5); /* @kind color */
+  --color-black-50: rgba(0,0,0,0.5); /* @kind color */
+  --color-black-55: rgba(0,0,0,0.55); /* @kind color */
+  --color-black-60: rgba(0,0,0,0.6); /* @kind color */
+  --color-black-66: rgba(0,0,0,0.66); /* @kind color */
+  --color-black-6: rgba(0,0,0,0.06); /* @kind color */
+  --color-black-75: rgba(0,0,0,0.75); /* @kind color */
+  --color-black-8: rgba(0,0,0,0.08); /* @kind color */
+  --color-black-90: rgba(0,0,0,0.9); /* @kind color */
+  --color-black-9: rgba(0,0,0,0.09); /* @kind color */
+  --color-black-solid-2: rgb(0,0,0); /* @kind color */
+  --color-black-solid-3: rgb(0,0,0); /* @kind color */
+  --color-black-solid-4: rgb(0,0,0); /* @kind color */
+  --color-black-solid: rgb(0,0,0); /* @kind color */
+  --color-blue-2: rgb(5,5,7); /* @kind color */
+  --color-cyan-13: rgb(5,59,58); /* @kind color */
+  --color-cyan-40: rgb(51,153,153); /* @kind color */
+  --color-cyan-47-2: rgb(62,178,162); /* @kind color */
+  --color-cyan-47: rgb(62,178,162); /* @kind color */
+  --color-green-37: rgb(47,143,70); /* @kind color */
+  --color-grey-10-22: rgba(26,27,24,0.22); /* @kind color */
+  --color-grey-10-50: rgba(26,27,24,0.5); /* @kind color */
+  --color-grey-10-55: rgba(26,27,24,0.55); /* @kind color */
+  --color-grey-10-75: rgba(26,27,24,0.75); /* @kind color */
+  --color-grey-10-8: rgba(26,27,24,0.08); /* @kind color */
+  --color-grey-10: rgb(26,27,24); /* @kind color */
+  --color-grey-12: rgb(28,28,34); /* @kind color */
+  --color-grey-14: rgb(33,35,38); /* @kind color */
+  --color-grey-16-2: rgb(40,40,40); /* @kind color */
+  --color-grey-16: rgb(40,40,40); /* @kind color */
+  --color-grey-17-2: rgb(44,44,44); /* @kind color */
+  --color-grey-17-3: rgb(44,44,44); /* @kind color */
+  --color-grey-17: rgb(44,44,44); /* @kind color */
+  --color-grey-18: rgb(45,45,45); /* @kind color */
+  --color-grey-20: rgb(51,51,51); /* @kind color */
+  --color-grey-27: rgb(68,68,68); /* @kind color */
+  --color-grey-33: rgb(85,85,85); /* @kind color */
+  --color-grey-4-28: rgba(10,10,12,0.28); /* @kind color */
+  --color-grey-4-2: rgb(10,10,10); /* @kind color */
+  --color-grey-4-60: rgba(10,10,12,0.6); /* @kind color */
+  --color-grey-42-2: rgb(106,106,106); /* @kind color */
+  --color-grey-42: rgb(107,107,107); /* @kind color */
+  --color-grey-46: rgb(117,117,117); /* @kind color */
+  --color-grey-48: rgb(123,123,123); /* @kind color */
+  --color-grey-4: rgb(10,10,12); /* @kind color */
+  --color-grey-50-45: rgba(128,128,128,0.45); /* @kind color */
+  --color-grey-52: rgb(134,132,132); /* @kind color */
+  --color-grey-56: rgb(143,143,143); /* @kind color */
+  --color-grey-5: rgb(13,13,13); /* @kind color */
+  --color-grey-60-2: rgb(153,153,153); /* @kind color */
+  --color-grey-60: rgb(154,154,154); /* @kind color */
+  --color-grey-7-2-2: rgb(17,17,17); /* @kind color */
+  --color-grey-7-2: rgb(18,18,18); /* @kind color */
+  --color-grey-7-3: rgb(18,18,18); /* @kind color */
+  --color-grey-7-75: rgba(18,18,18,0.75); /* @kind color */
+  --color-grey-74: rgb(189,189,189); /* @kind color */
+  --color-grey-77: rgb(197,197,197); /* @kind color */
+  --color-grey-7: rgb(17,17,17); /* @kind color */
+  --color-grey-80: rgb(204,204,204); /* @kind color */
+  --color-grey-81: rgb(207,207,207); /* @kind color */
+  --color-grey-84-2: rgb(214,214,214); /* @kind color */
+  --color-grey-84: rgb(210,213,217); /* @kind color */
+  --color-grey-85: rgb(217,217,217); /* @kind color */
+  --color-grey-87: rgb(221,221,221); /* @kind color */
+  --color-grey-88-50: rgba(224,224,224,0.5); /* @kind color */
+  --color-grey-89-2: rgb(228,228,228); /* @kind color */
+  --color-grey-89: rgb(228,228,228); /* @kind color */
+  --color-grey-9-2: rgb(22,22,22); /* @kind color */
+  --color-grey-90-2: rgb(231,230,226); /* @kind color */
+  --color-grey-90: rgb(230,230,230); /* @kind color */
+  --color-grey-92-2: rgb(241,238,230); /* @kind color */
+  --color-grey-92-3: rgb(233,234,236); /* @kind color */
+  --color-grey-92: rgb(231,234,238); /* @kind color */
+  --color-grey-93-2: rgb(238,238,238); /* @kind color */
+  --color-grey-93: rgb(255,219,219); /* @kind color */
+  --color-grey-94-70: rgba(240,240,240,0.7); /* @kind color */
+  --color-grey-95-2-2: rgb(244,244,242); /* @kind color */
+  --color-grey-95-2: rgb(243,243,243); /* @kind color */
+  --color-grey-95-3: rgb(241,241,241); /* @kind color */
+  --color-grey-95-4: rgb(244,243,240); /* @kind color */
+  --color-grey-95: rgb(243,243,243); /* @kind color */
+  --color-grey-97: rgb(248,248,248); /* @kind color */
+  --color-grey-9: rgb(23,23,23); /* @kind color */
+  --color-orange-50-2: rgb(254,162,3); /* @kind color */
+  --color-orange-50: rgb(254,162,3); /* @kind color */
+  --color-orange-51-2: rgb(215,161,46); /* @kind color */
+  --color-orange-51: rgb(196,150,66); /* @kind color */
+  --color-orange-52: rgb(212,164,55); /* @kind color */
+  --color-orange-55-2: rgb(248,164,30); /* @kind color */
+  --color-orange-55: rgb(245,166,35); /* @kind color */
+  --color-orange-57-0: rgba(200,162,91,0); /* @kind color */
+  --color-orange-57-50: rgba(200,162,91,0.5); /* @kind color */
+  --color-orange-57-55: rgba(200,162,91,0.55); /* @kind color */
+  --color-orange-57: rgb(200,162,91); /* @kind color */
+  --color-orange-60: rgb(199,164,106); /* @kind color */
+  --color-orange-61: rgb(251,176,59); /* @kind color */
+  --color-orange-66: rgb(229,188,106); /* @kind color */
+  --color-orange-78: rgb(242,216,154); /* @kind color */
+  --color-red-17: rgb(59,26,26); /* @kind color */
+  --color-red-21-2: rgb(100,28,8); /* @kind color */
+  --color-red-21-75: rgba(100,27,8,0.75); /* @kind color */
+  --color-red-21: rgb(100,27,8); /* @kind color */
+  --color-red-27: rgb(110,39,27); /* @kind color */
+  --color-red-42-70: rgba(191,22,22,0.7); /* @kind color */
+  --color-red-42: rgb(191,22,22); /* @kind color */
+  --color-red-50-82: rgba(146,115,107,0.82); /* @kind color */
+  --color-red-50: rgb(146,115,107); /* @kind color */
+  --color-red-60: rgb(214,90,120); /* @kind color */
+  --color-spring-green-10: rgb(8,42,26); /* @kind color */
+  --color-spring-green-13: rgb(10,58,34); /* @kind color */
+  --color-spring-green-16: rgb(11,69,40); /* @kind color */
+  --color-spring-green-17: rgb(13,74,43); /* @kind color */
+  --color-spring-green-22: rgb(27,86,51); /* @kind color */
+  --color-spring-green-25: rgb(0,128,32); /* @kind color */
+  --color-spring-green-8: rgb(6,36,20); /* @kind color */
+  --color-violet-54-2: rgb(144,101,176); /* @kind color */
+  --color-violet-54-3: rgb(144,101,176); /* @kind color */
+  --color-violet-54: rgb(144,101,176); /* @kind color */
+  --color-white-0-2-2: rgba(255,255,255,0.002); /* @kind color */
+  --color-white-0-2-3: rgba(255,255,255,0.002); /* @kind color */
+  --color-white-0-2-4: rgba(255,255,255,0.002); /* @kind color */
+  --color-white-0-2: rgba(255,255,255,0.002); /* @kind color */
+  --color-white-0: rgba(255,255,255,0); /* @kind color */
+  --color-white-10-2: rgba(255,255,255,0.1); /* @kind color */
+  --color-white-10: rgba(255,255,255,0.1); /* @kind color */
+  --color-white-18: rgba(255,255,255,0.18); /* @kind color */
+  --color-white-20: rgba(255,255,255,0.2); /* @kind color */
+  --color-white-22: rgba(255,255,255,0.22); /* @kind color */
+  --color-white-25-2: rgba(255,255,255,0.25); /* @kind color */
+  --color-white-25: rgba(255,255,255,0.25); /* @kind color */
+  --color-white-40-2: rgba(255,255,255,0.4); /* @kind color */
+  --color-white-40: rgba(255,255,255,0.4); /* @kind color */
+  --color-white-42: rgba(255,255,255,0.42); /* @kind color */
+  --color-white-45: rgba(255,255,255,0.45); /* @kind color */
+  --color-white-50: rgba(255,255,255,0.5); /* @kind color */
+  --color-white-55: rgba(255,255,255,0.55); /* @kind color */
+  --color-white-60: rgba(255,255,255,0.6); /* @kind color */
+  --color-white-70-2: rgba(255,255,255,0.7); /* @kind color */
+  --color-white-70-3: rgba(255,255,255,0.7); /* @kind color */
+  --color-white-70: rgba(255,255,255,0.7); /* @kind color */
+  --color-white-72: rgba(255,255,255,0.72); /* @kind color */
+  --color-white-8-2: rgba(255,255,255,0.08); /* @kind color */
+  --color-white-82: rgba(255,255,255,0.82); /* @kind color */
+  --color-white-85: rgba(255,255,255,0.85); /* @kind color */
+  --color-white-8: rgba(255,255,255,0.08); /* @kind color */
+  --color-white-92-2: rgba(255,255,255,0.92); /* @kind color */
+  --color-white-92: rgba(255,255,255,0.92); /* @kind color */
+  --color-white-solid-2: rgb(255,255,255); /* @kind color */
+  --color-white-solid-3: rgb(255,255,255); /* @kind color */
+  --color-white-solid-4: rgb(255,255,255); /* @kind color */
+  --color-white-solid: rgb(255,255,255); /* @kind color */
+  --corner-radius-10-44: 10.44;
+  --corner-radius-10: 10;
+  --corner-radius-12-8: 12.8;
+  --corner-radius-16-2: 16;
+  --corner-radius-16: 16;
+  --corner-radius-17: 17;
+  --corner-radius-2-5: 2.5;
+  --corner-radius-20: 20;
+  --corner-radius-25: 25;
+  --corner-radius-30: 30;
+  --corner-radius-3: 3;
+  --corner-radius-4-2: 4;
+  --corner-radius-4-3: 4;
+  --corner-radius-4-6: 4.6;
+  --corner-radius-4-8: 4.8;
+  --corner-radius-4: 4;
+  --corner-radius-5-2: 5;
+  --corner-radius-56: 56;
+  --corner-radius-5: 5;
+  --corner-radius-6-2: 6;
+  --corner-radius-6-3: 6.3;
+  --corner-radius-6-4: 6;
+  --corner-radius-6: 6;
+  --corner-radius-7-5: 7.5;
+  --corner-radius-8-2: 8;
+  --corner-radius-8: 8;
+  --corner-radius-999-2: 999;
+  --corner-radius-999: 999;
+  --font-size-10-5: 10.5;
+  --font-size-10: 10;
+  --font-size-11-2: 11;
+  --font-size-11-38: 11.375;
+  --font-size-11-5: 11.5;
+  --font-size-11: 11;
+  --font-size-12-2: 12;
+  --font-size-12: 12;
+  --font-size-13-2: 13;
+  --font-size-13-3: 13;
+  --font-size-13-4: 13;
+  --font-size-13: 13;
+  --font-size-14-2: 14;
+  --font-size-14-3: 14;
+  --font-size-14-5: 14.5;
+  --font-size-14: 14;
+  --font-size-15-2: 15;
+  --font-size-15-3: 15;
+  --font-size-15-4: 15;
+  --font-size-15: 15;
+  --font-size-16-2: 16;
+  --font-size-16-3: 16;
+  --font-size-16: 16;
+  --font-size-17-2: 17;
+  --font-size-17: 17;
+  --font-size-18: 18;
+  --font-size-20-2: 20;
+  --font-size-20: 20;
+  --font-size-21-2: 21;
+  --font-size-21: 21;
+  --font-size-22: 22;
+  --font-size-24-2: 24;
+  --font-size-24: 24;
+  --font-size-26: 26;
+  --font-size-28: 28;
+  --font-size-32: 32;
+  --font-size-34: 34;
+  --font-size-38: 38;
+  --font-size-44: 44;
+  --font-size-48: 48;
+  --font-size-50: 50;
+  --font-size-54: 54;
+  --font-size-60: 60;
+  --font-size-70: 70;
+  --font-size-8-67: 8.667;
+  --font-size-88: 88;
+  --font-weight-300-2: 300;
+  --font-weight-300-3: 300;
+  --font-weight-300: 300;
+  --font-weight-400-2: 400;
+  --font-weight-400-3: 400;
+  --font-weight-400-4: 400;
+  --font-weight-400: 400;
+  --font-weight-500-2: 500;
+  --font-weight-500-3: 500;
+  --font-weight-500: 500;
+  --font-weight-600-2: 600;
+  --font-weight-600-3: 600;
+  --font-weight-600-4: 600;
+  --font-weight-600: 600;
+  --font-weight-700-2: 700;
+  --font-weight-700-3: 700;
+  --font-weight-700-4: 700;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+  --item-spacing-0-01-2: -0.01;
+  --item-spacing-0-01-3: -0.01;
+  --item-spacing-0-01-4: -0.01;
+  --item-spacing-0-01: -0.01;
+  --item-spacing-0-2: 0;
+  --item-spacing-0-3: 0;
+  --item-spacing-0-89: -0.89;
+  --item-spacing-0: 0;
+  --item-spacing-1-21: 1.21;
+  --item-spacing-10-4: 10.4;
+  --item-spacing-100-86: 100.86;
+  --item-spacing-10: 10;
+  --item-spacing-11-2: 11.2;
+  --item-spacing-11-4: 11.4;
+  --item-spacing-11-7: 11.7;
+  --item-spacing-113-33: 113.33;
+  --item-spacing-12-2: 12;
+  --item-spacing-12-59: 12.59;
+  --item-spacing-12-5: 12.5;
+  --item-spacing-12-6: 12.6;
+  --item-spacing-12-79: 12.79;
+  --item-spacing-12-9: 12.9;
+  --item-spacing-12: 12;
+  --item-spacing-13-4-2: 13.4;
+  --item-spacing-13-4: 13.4;
+  --item-spacing-13-94: 13.94;
+  --item-spacing-133-14: 133.14;
+  --item-spacing-13: 13;
+  --item-spacing-14-01-2: 14.01;
+  --item-spacing-14-01: 14.01;
+  --item-spacing-14-1: -14.1;
+  --item-spacing-14-2: 14;
+  --item-spacing-14-99: 14.99;
+  --item-spacing-14: 14;
+  --item-spacing-16-01: 16.01;
+  --item-spacing-16-79: 16.795;
+  --item-spacing-165-6: 165.6;
+  --item-spacing-17-99-2: 17.99;
+  --item-spacing-17-99: 17.99;
+  --item-spacing-17-9: 17.9;
+  --item-spacing-18-2: 18;
+  --item-spacing-18-3: 18;
+  --item-spacing-187-7: 187.7;
+  --item-spacing-18: 18;
+  --item-spacing-195-28: 195.28;
+  --item-spacing-1: -1;
+  --item-spacing-2-19: 2.19;
+  --item-spacing-2-4: 2.4;
+  --item-spacing-2-68: 2.68;
+  --item-spacing-2-69-2: 2.69;
+  --item-spacing-2-69: 2.69;
+  --item-spacing-2-73: 2.73;
+  --item-spacing-2-74: 2.74;
+  --item-spacing-2-99-2: 2.99;
+  --item-spacing-2-99: 2.99;
+  --item-spacing-20-01: 20.01;
+  --item-spacing-20-3: 20.3;
+  --item-spacing-204-57: 204.57;
+  --item-spacing-207-91: 207.91;
+  --item-spacing-20: 20;
+  --item-spacing-215-14: 215.14;
+  --item-spacing-22: 22;
+  --item-spacing-23-2: 23.2;
+  --item-spacing-23-99: 23.99;
+  --item-spacing-230-39: 230.39;
+  --item-spacing-230-4: 230.4;
+  --item-spacing-25: 25;
+  --item-spacing-263-07: 263.07;
+  --item-spacing-269-7: 269.7;
+  --item-spacing-27-99: 27.99;
+  --item-spacing-277-28: 277.28;
+  --item-spacing-277-9: 277.9;
+  --item-spacing-278-98: 278.98;
+  --item-spacing-28-01: 28.01;
+  --item-spacing-28-1: 28.1;
+  --item-spacing-28-84: 28.84;
+  --item-spacing-28: 28;
+  --item-spacing-29-99: 29.99;
+  --item-spacing-3-2: 3;
+  --item-spacing-3-3: 3;
+  --item-spacing-30: 30;
+  --item-spacing-34: 34;
+  --item-spacing-36: 36;
+  --item-spacing-3: 3;
+  --item-spacing-4-2: 4.2;
+  --item-spacing-4-5-2: 4.5;
+  --item-spacing-4-5: 4.5;
+  --item-spacing-4-9: 4.9;
+  --item-spacing-40: 40;
+  --item-spacing-425: 425;
+  --item-spacing-5-01: 5.01;
+  --item-spacing-5-1: 5.1;
+  --item-spacing-5-39: 5.39;
+  --item-spacing-5-4: 5.4;
+  --item-spacing-5-99: 5.99;
+  --item-spacing-50: 50;
+  --item-spacing-56-95: 56.95;
+  --item-spacing-5: 5;
+  --item-spacing-6-2: 6;
+  --item-spacing-6-54: 6.535;
+  --item-spacing-6-65: 6.65;
+  --item-spacing-6-69: 6.69;
+  --item-spacing-6-78: 6.78;
+  --item-spacing-6-79: 6.79;
+  --item-spacing-6-89: 6.89;
+  --item-spacing-6-8: 6.8;
+  --item-spacing-6-9: 6.9;
+  --item-spacing-63-14: 63.14;
+  --item-spacing-641-31: 641.31;
+  --item-spacing-65-45: 65.45;
+  --item-spacing-6: 6;
+  --item-spacing-7-09: 7.085;
+  --item-spacing-7-1: 7.1;
+  --item-spacing-7-2: 7.2;
+  --item-spacing-7-3: 7;
+  --item-spacing-7-4: 7.4;
+  --item-spacing-701-33: 701.33;
+  --item-spacing-712-42: 712.42;
+  --item-spacing-75-8: 75.8;
+  --item-spacing-766-95: 766.95;
+  --item-spacing-775-45: 775.45;
+  --item-spacing-79-92: 79.92;
+  --item-spacing-7: 7;
+  --item-spacing-8-01-2: 8.01;
+  --item-spacing-8-01: 8.01;
+  --item-spacing-8-11: 8.11;
+  --item-spacing-8-2: 8.2;
+  --item-spacing-8-52: 8.52;
+  --item-spacing-8-6: 8.6;
+  --item-spacing-8-8-2: 8.795;
+  --item-spacing-8-8: 8.8;
+  --item-spacing-8-99: 8.99;
+  --item-spacing-823-33: 823.33;
+  --item-spacing-89-62: 89.62;
+  --item-spacing-894-56: 894.56;
+  --item-spacing-8: 8;
+  --item-spacing-9-09: 9.095;
+  --item-spacing-9-2-2: 9.2;
+  --item-spacing-9-2: 9;
+  --item-spacing-9-3: 9;
+  --item-spacing-9-76: 9.76;
+  --item-spacing-91-16: 91.16;
+  --item-spacing-9: 9;
+  --item-spacing-s: 24;
+  --item-spacing-xs-2: 8;
+  --item-spacing-xs: 8;
+  --item-spacing-xxs: 4;
+  --item-spacing-xxxs: 2;
+  --letter-spacing-0-15: -0.15;
+  --letter-spacing-0-17: -0.17;
+  --letter-spacing-0-22-2: 0.22;
+  --letter-spacing-0-22: -0.224;
+  --letter-spacing-0-25: -0.25;
+  --letter-spacing-0-26: 0.26;
+  --letter-spacing-0-35: -0.35;
+  --letter-spacing-0-36: 0.36;
+  --letter-spacing-0-42: 0.42;
+  --letter-spacing-0-44: 0.44;
+  --letter-spacing-0-48: 0.48;
+  --letter-spacing-0-4: 0.4;
+  --letter-spacing-0-52: -0.52;
+  --letter-spacing-0-53: 0.528;
+  --letter-spacing-0-5: 0.5;
+  --letter-spacing-0-6-2: 0.6;
+  --letter-spacing-0-61: -0.608;
+  --letter-spacing-0-64: 0.64;
+  --letter-spacing-0-6: 0.6;
+  --letter-spacing-0-78: 0.78;
+  --letter-spacing-0-7: -0.7;
+  --letter-spacing-0-8-2: -0.8;
+  --letter-spacing-0-85: -0.85;
+  --letter-spacing-0-88-2: -0.88;
+  --letter-spacing-0-88: 0.88;
+  --letter-spacing-0-8: 0.8;
+  --letter-spacing-0-96-2: 0.96;
+  --letter-spacing-0-96: 0.96;
+  --letter-spacing-0-9: 0.9;
+  --letter-spacing-1-04: 1.04;
+  --letter-spacing-1-12: 1.12;
+  --letter-spacing-1-2-2: 1.2;
+  --letter-spacing-1-2-3: -1.2;
+  --letter-spacing-1-2: 1.2;
+  --letter-spacing-1-35: -1.35;
+  --letter-spacing-1-44: 1.44;
+  --letter-spacing-1-98: 1.98;
+  --letter-spacing-2-07: 2.074;
+  --letter-spacing-2-42: 2.424;
+  --letter-spacing-2-4: 2.4;
+  --letter-spacing-2-52: 2.52;
+  --letter-spacing-2-5: 2.5;
+  --letter-spacing-2-64: 2.64;
+  --letter-spacing-2-86: 2.86;
+  --letter-spacing-2-88: 2.88;
+  --letter-spacing-2: 2;
+  --letter-spacing-3-08: 3.08;
+  --letter-spacing-3-5: 3.5;
+  --letter-spacing-3-64: 3.64;
+  --letter-spacing-3-6: 3.6;
+  --letter-spacing-4-2: 4.2;
+  --line-height-0: 0;
+  --line-height-11: 11;
+  --line-height-12-22: 12.22;
+  --line-height-12-61: 12.61;
+  --line-height-12-63: 12.63;
+  --line-height-12: 12;
+  --line-height-13-2: 13.2;
+  --line-height-14-3-2: 14.3;
+  --line-height-14-3: 14.3;
+  --line-height-15-11: 15.11;
+  --line-height-15-3: 15.3;
+  --line-height-15-49: 15.49;
+  --line-height-15-6-2: 15.6;
+  --line-height-15-68: 15.68;
+  --line-height-15-6: 15.6;
+  --line-height-15-77: 15.77;
+  --line-height-15-89: 15.89;
+  --line-height-15: 15;
+  --line-height-16-5: 16.5;
+  --line-height-16-64: 16.64;
+  --line-height-16-7: 16.7;
+  --line-height-16-8: 16.8;
+  --line-height-16-9-2: 16.9;
+  --line-height-16-9: 16.9;
+  --line-height-17-25: 17.25;
+  --line-height-17-33: 17.33;
+  --line-height-17-4: 17.4;
+  --line-height-17-6: 17.6;
+  --line-height-17-92: 17.92;
+  --line-height-17: 17;
+  --line-height-18-2-2: 18.2;
+  --line-height-18-2: 18.2;
+  --line-height-18-33: 18.33;
+  --line-height-18-43: 18.43;
+  --line-height-18-4: 18.4;
+  --line-height-18-78: 18.78;
+  --line-height-18: 18;
+  --line-height-19-2-2: 19.2;
+  --line-height-19-2: 19.2;
+  --line-height-19-5-2: 19.5;
+  --line-height-19-5: 19.5;
+  --line-height-19-6: 19.6;
+  --line-height-19-8-2: 19.8;
+  --line-height-19-8: 19.8;
+  --line-height-20-16: 20.16;
+  --line-height-20-22: 20.22;
+  --line-height-20-4: 20.4;
+  --line-height-20-8-2: 20.8;
+  --line-height-20-8-3: 20.8;
+  --line-height-20-8: 20.8;
+  --line-height-20: 20;
+  --line-height-21-29: 21.29;
+  --line-height-21-6-2: 21.6;
+  --line-height-21-6-3: 21.6;
+  --line-height-21-6: 21.6;
+  --line-height-21-7: 21.7;
+  --line-height-21: 21;
+  --line-height-22-2: 22;
+  --line-height-22-4-2: 22.4;
+  --line-height-22-44: 22.44;
+  --line-height-22-4: 22.4;
+  --line-height-22-5: 22.5;
+  --line-height-22-67: 22.67;
+  --line-height-22: 22;
+  --line-height-23-14: 23.14;
+  --line-height-23-25: 23.25;
+  --line-height-23-4-2: 23.4;
+  --line-height-23-4: 23.4;
+  --line-height-23-8: 23.8;
+  --line-height-24-26: 24.26;
+  --line-height-25-2-2: 25.2;
+  --line-height-25-2-3: 25.2;
+  --line-height-25-2: 25.2;
+  --line-height-25-5: 25.5;
+  --line-height-25-6: 25.6;
+  --line-height-26-44: 26.44;
+  --line-height-26: 26;
+  --line-height-27-2-2: 27.2;
+  --line-height-27-2-3: 27.2;
+  --line-height-27-2: 27.2;
+  --line-height-27-3-2: 27.3;
+  --line-height-27-3: 27.3;
+  --line-height-27-4: 27;
+  --line-height-27-5: 27.5;
+  --line-height-27-9: 27.9;
+  --line-height-27: 27;
+  --line-height-28-38: 28.38;
+  --line-height-28-6-2: 28.6;
+  --line-height-28-6: 28.6;
+  --line-height-28-8-2: 28.8;
+  --line-height-28-8-3: 28.8;
+  --line-height-28-8: 28.8;
+  --line-height-29-4-2: 29.4;
+  --line-height-29-4: 29.4;
+  --line-height-30-22: 30.22;
+  --line-height-30-6: 30.6;
+  --line-height-30: 30;
+  --line-height-31-2-2: 31.2;
+  --line-height-31-2: 31.2;
+  --line-height-31-62: 31.62;
+  --line-height-32-32: 32.32;
+  --line-height-32-4: 32.4;
+  --line-height-32-5: 32.5;
+  --line-height-32: 32;
+  --line-height-33-6-2: 33.6;
+  --line-height-33-6: 33.6;
+  --line-height-33-8: 33.8;
+  --line-height-34: 34;
+  --line-height-35-84: 35.84;
+  --line-height-36-75: 36.75;
+  --line-height-36-8: 36.8;
+  --line-height-37-4: 37.4;
+  --line-height-38-4: 38.4;
+  --line-height-39-52: 39.52;
+  --line-height-42: 42;
+  --line-height-44-2: 44.2;
+  --line-height-46-2: 46.2;
+  --line-height-55-2: 55.2;
+  --line-height-56-7: 56.7;
+  --line-height-61-6: 61.6;
+  --line-height-62-4: 62.4;
+  --line-height-64-8: 64.8;
+  --line-height-70-2: 70.2;
+  --line-height-70: 70;
+  --line-height-80: 80;
+  --line-height-9-9: 9.9;
+  --opacity-100-2: 100; /* @kind other */
+  --opacity-100-3: 100; /* @kind other */
+  --opacity-100-4: 100; /* @kind other */
+  --opacity-100: 100; /* @kind other */
+  --opacity-30-2: 30; /* @kind other */
+  --opacity-30: 30; /* @kind other */
+  --opacity-40: 40; /* @kind other */
+  --opacity-55: 55; /* @kind other */
+  --opacity-60-2: 60; /* @kind other */
+  --opacity-60: 60; /* @kind other */
+  --opacity-70: 70; /* @kind other */
+  --opacity-75: 75; /* @kind other */
+  --opacity-80: 80; /* @kind other */
+  --opacity-85-2: 85; /* @kind other */
+  --opacity-85: 85; /* @kind other */
+  --opacity-90: 90; /* @kind other */
+  --radius-10: 10;
+  --radius-36-2: 36;
+  --radius-36-3: 36;
+  --radius-36: 36;
+  --radius-58-75-2: 58.75;
+  --radius-58-75-3: 58.75;
+  --radius-58-75: 58.75;
+  --stroke-weight-0-01-2: 0.013;
+  --stroke-weight-0-01: 0.005;
+  --stroke-weight-0-02: 0.016;
+  --stroke-weight-0-03-2: 0.029;
+  --stroke-weight-0-03: 0.031;
+  --stroke-weight-0-04-2: 0.035;
+  --stroke-weight-0-04: 0.035;
+  --stroke-weight-0-05: 0.049;
+  --stroke-weight-0-18: 0.18;
+  --stroke-weight-0-22: 0.225;
+  --stroke-weight-0-2: 0.2;
+  --stroke-weight-0-38: 0.375;
+  --stroke-weight-0-44: 0.438;
+  --stroke-weight-0-54: 0.538;
+  --stroke-weight-0-58-2: 0.583;
+  --stroke-weight-0-58: 0.583;
+  --stroke-weight-0-5: 0.5;
+  --stroke-weight-0-61-2: 0.606;
+  --stroke-weight-0-61-3: 0.606;
+  --stroke-weight-0-61: 0.606;
+  --stroke-weight-0-67-2: 0.667;
+  --stroke-weight-0-67: 0.667;
+  --stroke-weight-0-69: 0.688;
+  --stroke-weight-0-83-2: 0.833;
+  --stroke-weight-0-83-3: 0.833;
+  --stroke-weight-0-83: 0.833;
+  --stroke-weight-0-85: 0.852;
+  --stroke-weight-0-89: 0.889;
+  --stroke-weight-0-8: 0.8;
+  --stroke-weight-0-93: 0.933;
+  --stroke-weight-0-95-2: 0.947;
+  --stroke-weight-0-95: 0.947;
+  --stroke-weight-1-01: 1.012;
+  --stroke-weight-1-04: 1.042;
+  --stroke-weight-1-05-2: 1.053;
+  --stroke-weight-1-05: 1.053;
+  --stroke-weight-1-07: 1.067;
+  --stroke-weight-1-1-2: 1.1;
+  --stroke-weight-1-11-2: 1.111;
+  --stroke-weight-1-11: 1.111;
+  --stroke-weight-1-13: 1.125;
+  --stroke-weight-1-14: 1.137;
+  --stroke-weight-1-16-2: 1.158;
+  --stroke-weight-1-16: 1.165;
+  --stroke-weight-1-17: 1.167;
+  --stroke-weight-1-1: 1.1;
+  --stroke-weight-1-2-2: 1.2;
+  --stroke-weight-1-22: 1.222;
+  --stroke-weight-1-23: 1.225;
+  --stroke-weight-1-25: 1.25;
+  --stroke-weight-1-28: 1.283;
+  --stroke-weight-1-29: 1.294;
+  --stroke-weight-1-2: 1;
+  --stroke-weight-1-31: 1.313;
+  --stroke-weight-1-3: 1;
+  --stroke-weight-1-47: 1.467;
+  --stroke-weight-1-49: 1.488;
+  --stroke-weight-1-4: 1;
+  --stroke-weight-1-5-2: 1.5;
+  --stroke-weight-1-5-3: 1.5;
+  --stroke-weight-1-56: 1.556;
+  --stroke-weight-1-57: 1.575;
+  --stroke-weight-1-5: 1.5;
+  --stroke-weight-1-75: 1.75;
+  --stroke-weight-1-83: 1.833;
+  --stroke-weight-1: 1;
+  --stroke-weight-2-08: 2.083;
+  --stroke-weight-2: 2;
+}
