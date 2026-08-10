@@ -2650,6 +2650,11 @@
             applySharedParam(daySelfSel, 'sd'); applySharedParam(monthSelfSel, 'sm'); applySharedParam(yearSelfSel, 'sy');
             applySharedParam(daySel, 'od'); applySharedParam(monthSel, 'om'); applySharedParam(yearSel, 'oy');
 
+            const hasSharedState = ['sd', 'sm', 'sy', 'od', 'om', 'oy'].every(k => sharedParams.has(k));
+            if (hasSharedState) {
+                section.scrollIntoView({ block: 'start' });
+            }
+
             const lines =["Thousands of mornings together.", "Countless memories. One timeless gift.", "Every shared moment deserves to be remembered.", "Some relationships are measured in moments, not years.", "Time passes. Memories stay."];
             let emoTimer = null;
             function cycleEmotional() {
