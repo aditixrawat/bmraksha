@@ -2642,7 +2642,15 @@
             [monthSel, monthSelfSel].forEach(sel => { const ph = document.createElement('option'); ph.value = ''; ph.textContent = 'Month'; ph.disabled = true; ph.selected = true; sel.appendChild(ph); months.forEach((m, i) => { const o = document.createElement('option'); o.value = i; o.textContent = m; sel.appendChild(o); }); });
             [yearSel, yearSelfSel].forEach(sel => { const ph = document.createElement('option'); ph.value = ''; ph.textContent = 'Year'; ph.disabled = true; ph.selected = true; sel.appendChild(ph); for (let y = thisYear; y >= thisYear - 90; y--) { const o = document.createElement('option'); o.value = y; o.textContent = y; sel.appendChild(o); } });
 
-            const lines = ["Thousands of mornings together.", "Countless memories. One timeless gift.", "Every shared moment deserves to be remembered.", "Some relationships are measured in moments, not years.", "Time passes. Memories stay."];
+            const sharedParams = new URLSearchParams(location.search);
+            function applySharedParam(sel, key) {
+                const val = sharedParams.get(key);
+                if (val !== null && Array.from(sel.options).some(o => o.value === val)) sel.value = val;
+            }
+            applySharedParam(daySelfSel, 'sd'); applySharedParam(monthSelfSel, 'sm'); applySharedParam(yearSelfSel, 'sy');
+            applySharedParam(daySel, 'od'); applySharedParam(monthSel, 'om'); applySharedParam(yearSel, 'oy');
+
+            const lines =["Thousands of mornings together.", "Countless memories. One timeless gift.", "Every shared moment deserves to be remembered.", "Some relationships are measured in moments, not years.", "Time passes. Memories stay."];
             let emoTimer = null;
             function cycleEmotional() {
                 let i = Math.floor(Math.random() * lines.length);
@@ -2693,6 +2701,14 @@
                 const days = Math.floor(ms / 86400000);
                 const hours = Math.floor(ms / 3600000);
                 const minutes = Math.floor(ms / 60000);
+
+                try {
+                    const stateParams = new URLSearchParams({
+                        sd: daySelfSel.value, sm: monthSelfSel.value, sy: yearSelfSel.value,
+                        od: daySel.value, om: monthSel.value, oy: yearSel.value
+                    });
+                    history.replaceState(null, '', location.pathname + '?' + stateParams.toString() + location.hash);
+                } catch (e) { /* replaceState unavailable (e.g. file:// in some browsers) */ }
 
                 clearInterval(emoTimer); emotionalEl.classList.remove('show');
                 cta.classList.remove('show');
