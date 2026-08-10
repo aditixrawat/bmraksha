@@ -2767,8 +2767,8 @@
             function shareText() {
                 const days = daysEl ? daysEl.textContent : '';
                 return days && days !== '0'
-                    ? `We've shared ${days} days together. See how much time you've shared →`
-                    : `See how much time you've shared with the people you love →`;
+                    ? `We've shared ${days} days together — and counting. This Raksha Bandhan, I found a gift that lasts longer than a rakhi. See our time together:`
+                    : `This Raksha Bandhan, see how much time you've shared with someone you love — and find a gift that lasts longer than a rakhi:`;
             }
 
             function closeMenu() {
@@ -2777,7 +2777,7 @@
             }
 
             shareBtn.addEventListener('click', async () => {
-                const shareData = { title: 'Bruno Milano — Time Together', text: shareText(), url: location.href };
+                const shareData = { title: "Bruno Milano · The Rakhi That Never Comes Off", text: shareText(), url: location.href };
                 if (navigator.share) {
                     try { await navigator.share(shareData); } catch (e) { /* user cancelled */ }
                     return;
