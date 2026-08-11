@@ -1098,42 +1098,6 @@
             box-shadow: 0 0 0 3px rgba(215, 161, 46, .22), 0 16px 32px -14px rgba(120, 90, 30, .4)
         }
 
-        .gm-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            max-width: 640px
-        }
-
-        .gm-chip {
-            padding: 15px 28px;
-            border-radius: 999px;
-            border: 1px solid rgba(215, 161, 46, .5);
-            background: #fdf9f2;
-            font-size: 15px;
-            font-weight: 500;
-            color: #2c1c05;
-            cursor: pointer;
-            transition: all .25s ease
-        }
-
-        .gm-chip:hover {
-            border-color: var(--gold-1);
-            filter: brightness(1.05);
-            transform: translateY(-1px)
-        }
-
-        .gm-chip:active {
-            transform: translateY(0) scale(.96)
-        }
-
-        .gm-chip.sel {
-            background: #1a1408;
-            color: #fdf3df;
-            border-color: #1a1408
-        }
-
         .gm-continue {
             margin-top: 22px;
             padding: 13px 30px;
@@ -1165,46 +1129,6 @@
 
         .gm-continue:active {
             transform: translateY(0) scale(.97)
-        }
-
-        .gm-segmented {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            align-items: center;
-            width: 100%;
-            max-width: 440px
-        }
-
-        .gm-seg {
-            padding: 20px 26px;
-            border-radius: 10px;
-            border: 1px solid rgba(215, 161, 46, .5);
-            background: #fdf9f2;
-            font-size: 15px;
-            font-weight: 500;
-            color: #2c1c05;
-            text-align: center;
-            cursor: pointer;
-            transition: all .25s ease;
-            width: 100%
-        }
-
-        .gm-seg:hover {
-            border-color: var(--gold-1);
-            filter: brightness(1.05);
-            transform: translateY(-1px)
-        }
-
-        .gm-seg:active {
-            transform: translateY(0) scale(.98)
-        }
-
-        .gm-seg.sel {
-            background: #1a1408;
-            border-color: transparent;
-            color: #fdf3df;
-            font-weight: 600
         }
 
         .gm-occasions {
@@ -1650,16 +1574,6 @@
                 font-weight: 700 !important;
                 white-space: normal !important;
                 line-height: 1.2 !important
-            }
-
-            .gm-chip {
-                padding: 14px 22px;
-                font-size: 14px
-            }
-
-            .gm-seg {
-                padding: 16px 20px;
-                font-size: 14px
             }
 
             .gm-qsub {
@@ -2616,37 +2530,92 @@
                 <div class="gm-qstage" id="gmStage">
                     <div class="gm-q active" data-q="1" id="gmQ1">
                         <span class="gm-qlabel">Who are you gifting?</span>
+                        <span class="gm-qsub">This sets the collection we choose from.</span>
                         <div class="gm-cards" id="gmWho">
-                            <div class="gm-card" data-val="Brother"><img src="./assets/imagery/hero-slide-1.jpg"
-                                    alt=""><span>Brother</span></div>
-                            <div class="gm-card" data-val="Sister"><img src="./assets/imagery/hero-slide-2.jpg"
-                                    alt=""><span>Sister</span></div>
-                            <div class="gm-card" data-val="Fiancé"><img src="./assets/imagery/mission-hero.png"
-                                    alt=""><span>Bhabhi</span></div>
-                            <div class="gm-card" data-val="Father"><img
-                                    src="./assets/imagery/collection-lombardy-luxe.jpg" alt=""><span>Jiju</span></div>
+                            <div class="gm-card" data-val="Brother" data-relation="brother" data-pronoun="he"
+                                data-pronoun-poss="his"><img src="./assets/imagery/hero-slide-1.jpg" alt="">
+                                <span>Brother</span><small>Bhai · Anna · Dada</small>
+                            </div>
+                            <div class="gm-card" data-val="Sister" data-relation="sister" data-pronoun="she"
+                                data-pronoun-poss="her"><img src="./assets/imagery/hero-slide-2.jpg" alt="">
+                                <span>Sister</span><small>Behen · Akka · Didi</small>
+                            </div>
+                            <div class="gm-card" data-val="For Him" data-relation="him" data-pronoun="he"
+                                data-pronoun-poss="his"><img src="./assets/imagery/mission-hero.png" alt="">
+                                <span>For Him</span><small>Anyone else — Jiju, Bava, Dad</small>
+                            </div>
+                            <div class="gm-card" data-val="For Her" data-relation="her" data-pronoun="she"
+                                data-pronoun-poss="her"><img src="./assets/imagery/collection-lombardy-luxe.jpg"
+                                    alt=""><span>For Her</span><small>Anyone else — Bhabhi, Anni, Mum</small>
+                            </div>
                         </div>
                     </div>
                     <div class="gm-q" data-q="2" id="gmQ2">
-                        <span class="gm-qlabel">How would you describe them?</span>
-                        <div class="gm-chips" id="gmPersonality">
-                            <button class="gm-chip">Minimal</button><button class="gm-chip">Classic</button><button
-                                class="gm-chip">Corporate</button><button class="gm-chip">Creative</button><button
-                                class="gm-chip">Bold</button><button class="gm-chip">Elegant</button><button
-                                class="gm-chip">Modern</button><button class="gm-chip">Sporty</button><button
-                                class="gm-chip">Confident</button>
+                        <span class="gm-qlabel" id="gmQ2Label">Which one is your brother?</span>
+                        <span class="gm-qsub">Choose <strong>one or two</strong>. The first carries the most
+                            weight.</span>
+                        <div class="gm-cards" id="gmPersona">
+                            <div class="gm-card" data-val="The Classic">
+                                <img src="./assets/imagery/collection-doppio-chrono.jpg" alt="">
+                                <span>The Classic</span><small>Ironed sleeves. Notices yours.</small>
+                            </div>
+                            <div class="gm-card" data-val="The Bold">
+                                <img src="./assets/imagery/collection-lombardy-luxe.jpg" alt="">
+                                <span>The Bold</span><small>Walks in and you notice.</small>
+                            </div>
+                            <div class="gm-card" data-val="The Active">
+                                <img src="./assets/imagery/collection-sportiva-classic.jpg" alt="">
+                                <span>The Active</span><small>Five a.m., unreasonably cheerful.</small>
+                            </div>
+                            <div class="gm-card" data-val="The Easy One">
+                                <img src="./assets/imagery/collection-ambrosiana-chic.jpg" alt="">
+                                <span>The Easy One</span><small>Owns three shirts. Wears one.</small>
+                            </div>
                         </div>
+                        <button type="button" class="gm-continue" id="gmPersonaContinue">Continue →</button>
                     </div>
                     <div class="gm-q" data-q="3" id="gmQ3">
-                        <span class="gm-qlabel">Your Budget</span>
-                        <div class="gm-segmented" id="gmBudget">
-                            <button class="gm-seg">Under ₹3,000</button><button
-                                class="gm-seg">₹3,000–₹5,000</button><button
-                                class="gm-seg">₹5,000–₹8,000</button><button class="gm-seg">Premium Collection</button>
+                        <span class="gm-qlabel" id="gmQ3Label">When is he wearing it?</span>
+                        <span class="gm-qsub" id="gmQ3Sub">What he is doing, most days of the week.</span>
+                        <div class="gm-occasions" id="gmOccasion">
+                            <button type="button" class="gm-occasion-card" data-val="At a desk">
+                                <span class="gm-occasion-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                                        <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"></path>
+                                        <line x1="3" y1="13" x2="21" y2="13"></line>
+                                    </svg>
+                                </span>
+                                <span class="gm-occasion-title">At a desk</span>
+                                <span class="gm-occasion-desc">Office, meetings, a sleeve to slide under.</span>
+                            </button>
+                            <button type="button" class="gm-occasion-card" data-val="Out and about">
+                                <span class="gm-occasion-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M2 9l10-5 10 5-10 5-10-5z"></path>
+                                        <path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"></path>
+                                        <path d="M22 9v6"></path>
+                                    </svg>
+                                </span>
+                                <span class="gm-occasion-title">Out and about</span>
+                                <span class="gm-occasion-desc">Errands, friends, campus, everything after.</span>
+                            </button>
+                            <button type="button" class="gm-occasion-card" data-val="On the move">
+                                <span class="gm-occasion-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 7v10M18 7v10M2 10v4M22 10v4M6 12h12"></path>
+                                    </svg>
+                                </span>
+                                <span class="gm-occasion-title">On the move</span>
+                                <span class="gm-occasion-desc">Gym, road, travel, the occasional sea.</span>
+                            </button>
                         </div>
                     </div>
                     <div class="gm-q gm-right" data-q="4" id="gmRight">
-                        <div class="gm-summary" id="gmSummary"><span class="eb2">Your Match</span>
+                        <div class="gm-summary" id="gmSummary"><span class="eb2" id="gmSummaryEyebrow">Your Match</span>
                             <h4 id="gmSummaryTitle">—</h4>
                             <p id="gmSummaryText"></p>
                         </div>
@@ -3316,30 +3285,37 @@
                 parallax();
             }
             const gm = document.getElementById('gm');
-            const state = { who: null, personality: null, budget: null };
+            const state = { who: null, relation: null, pronoun: null, pronounPoss: null, personas: [], occasion: null };
             const q2 = document.getElementById('gmQ2'), q3 = document.getElementById('gmQ3');
-            const previewWrap = document.getElementById('gmPreview'), previewImg = document.getElementById('gmPreviewImg'), caption = document.getElementById('gmCaption');
-            const summary = document.getElementById('gmSummary'), summaryTitle = document.getElementById('gmSummaryTitle'), summaryText = document.getElementById('gmSummaryText');
+            const q2Label = document.getElementById('gmQ2Label'), q3Label = document.getElementById('gmQ3Label'), q3Sub = document.getElementById('gmQ3Sub');
+            const summary = document.getElementById('gmSummary'), summaryEyebrow = document.getElementById('gmSummaryEyebrow'), summaryTitle = document.getElementById('gmSummaryTitle'), summaryText = document.getElementById('gmSummaryText');
             const results = document.getElementById('gmResults');
+            const personaContinue = document.getElementById('gmPersonaContinue');
 
-            const tints = { Minimal: 'radial-gradient(420px 320px at 50% 45%,#eef0ee,#d8dcdb)', Classic: 'radial-gradient(420px 320px at 50% 45%,#f2e0b8,#e6d0a0)', Corporate: 'radial-gradient(420px 320px at 50% 45%,#dfe2e6,#c3c8cf)', Creative: 'radial-gradient(420px 320px at 50% 45%,#e3ecdf,#c7d8c0)', Bold: 'radial-gradient(420px 320px at 50% 45%,#d9d3ce,#b8afa6)', Elegant: 'radial-gradient(420px 320px at 50% 45%,#f2e0b8,#e0c98f)', Modern: 'radial-gradient(420px 320px at 50% 45%,#e8e8ea,#cfd0d4)', Sporty: 'radial-gradient(420px 320px at 50% 45%,#e6e9d8,#c9cfb0)', Confident: 'radial-gradient(420px 320px at 50% 45%,#efd9c7,#dcb98f)' };
             const productPoolWomen = [
-                { name: 'Lombardy Luxe', code: 'BM1004-06', img: './assets/imagery/collection-radiante-heritage.jpg', price: '₹4,600', colors: ['#b8bcc0', '#d7a12e'] },
-                { name: 'Ambrosiana Chic', code: 'BM1006-04', img: './assets/imagery/collection-ambrosiana-chic.jpg', price: '₹3,800', colors: ['#1a1408', '#d7a12e'] },
-                { name: 'Ambrosiana Chic', code: 'BM1006-07', img: './assets/imagery/collection-lombardy-luxe.jpg', price: '₹5,100', colors: ['#1a1408', '#b8bcc0'] }
+                { name: 'Lombardy Luxe', code: 'Oro Argento', img: './assets/imagery/collection-lombardy-luxe.jpg', price: '₹4,600', mrp: '₹5,999', colors: ['#b8bcc0', '#d7a12e'] },
+                { name: 'Ambrosiana Chic', code: 'Nero Oro', img: './assets/imagery/collection-ambrosiana-chic.jpg', price: '₹3,800', mrp: '₹4,999', colors: ['#1a1408', '#d7a12e'] },
+                { name: 'Radiante Heritage', code: 'Oro Oro', img: './assets/imagery/collection-radiante-heritage.jpg', price: '₹5,100', mrp: '₹6,499', colors: ['#d7a12e', '#d7a12e'] },
+                { name: 'Lombardy Luxe', code: 'Verde Oro', img: './assets/imagery/collection-lombardy-luxe.jpg', price: '₹4,400', mrp: '₹5,799', colors: ['#3f6b4a', '#d7a12e'] },
+                { name: 'Ambrosiana Chic', code: 'Bianco', img: './assets/imagery/collection-ambrosiana-chic.jpg', price: '₹3,600', mrp: '₹4,799', colors: ['#e9e6dd', '#1a1408'] },
+                { name: 'Radiante Heritage', code: 'Rosa Oro', img: './assets/imagery/collection-radiante-heritage.jpg', price: '₹4,900', mrp: '₹6,199', colors: ['#c98f8f', '#d7a12e'] }
             ];
             const productPoolMen = [
-                { name: 'Vittorio Chrono', code: 'BM1010-02', img: './assets/imagery/collection-doppio-chrono.jpg', price: '₹4,200', colors: ['#1a1408', '#d7a12e', '#b8bcc0'] },
-                { name: 'Metropolis Classic', code: 'BM1001-03', img: './assets/imagery/collection-sportiva-classic.jpg', price: '₹3,500', colors: ['#1a1408', '#d7a12e', '#b8bcc0'] },
-                { name: 'Vittorio Chrono', code: 'BM1010-06', img: './assets/imagery/collection-radiante-heritage.jpg', price: '₹4,900', colors: ['#1a1408', '#b8bcc0'] }
+                { name: 'Metropolis Classic', code: 'Nero-Verde', img: './assets/imagery/collection-sportiva-classic.jpg', price: '₹3,148', mrp: '₹4,999', colors: ['#1a1408', '#3f6b4a'] },
+                { name: 'Duomo Heritage', code: 'Oro Nero', img: './assets/imagery/collection-radiante-heritage.jpg', price: '₹3,248', mrp: '₹5,999', colors: ['#d7a12e', '#1a1408'] },
+                { name: 'Vittorio Chrono', code: 'Verde', img: './assets/imagery/collection-doppio-chrono.jpg', price: '₹3,498', mrp: '₹6,999', colors: ['#3f6b4a', '#b8bcc0'] },
+                { name: 'Doppio Chrono', code: 'Nero Oro', img: './assets/imagery/collection-doppio-chrono.jpg', price: '₹3,548', mrp: '₹6,999', colors: ['#1a1408', '#d7a12e'] },
+                { name: 'Doppio Chrono', code: 'Verde Oro', img: './assets/imagery/collection-doppio-chrono.jpg', price: '₹3,548', mrp: '₹6,999', colors: ['#3f6b4a', '#d7a12e'] },
+                { name: 'Sportiva Classic', code: 'Oro Antico', img: './assets/imagery/collection-sportiva-classic.jpg', price: '₹3,399', mrp: '₹6,999', colors: ['#d7a12e', '#b8bcc0'] },
+                { name: 'Doppio Chrono', code: 'Blu Rosso', img: './assets/imagery/collection-doppio-chrono.jpg', price: '₹3,348', mrp: '₹6,999', colors: ['#3a4f7a', '#8a2c3f'] },
+                { name: 'Sportiva Classic', code: 'Verde', img: './assets/imagery/collection-sportiva-classic.jpg', price: '₹3,399', mrp: '₹6,999', colors: ['#3f6b4a', '#1a1408'] },
+                { name: 'Sportiva Classic', code: 'Arancione', img: './assets/imagery/collection-sportiva-classic.jpg', price: '₹3,399', mrp: '₹6,999', colors: ['#c9702e', '#1a1408'] }
             ];
-            const genderByWho = { Brother: 'men', Sister: 'women', Fiancé: 'women', Father: 'men' };
-            const personaCopy = { Minimal: 'clean lines and understated confidence', Classic: 'timeless elegance and everyday sophistication', Corporate: 'quiet authority in every meeting', Creative: 'character that speaks before they do', Bold: 'presence that never needs to try', Elegant: 'refinement that ages beautifully', Modern: 'contemporary edge, worn easily', Sporty: 'energy that keeps up with them', Confident: 'a quiet, steady kind of confidence' };
+            const genderByWho = { Brother: 'men', Sister: 'women', 'For Him': 'men', 'For Her': 'women' };
+            const personaDesc = { 'The Classic': 'ironed sleeves, notices yours', 'The Bold': 'walks in and you notice', 'The Active': 'up at five, unreasonably cheerful', 'The Easy One': 'owns three shirts, wears one' };
 
             function reveal() { gm.classList.add('in'); }
             if (reduce) { reveal(); } else { const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { reveal(); io.disconnect(); } }); }, { threshold: .15 }); io.observe(gm); }
-
-            function setPreviewTint() { }
 
             const q1 = document.getElementById('gmQ1');
             function goToStep(fromEl, toEl) {
@@ -3357,43 +3333,67 @@
                     document.querySelectorAll('#gmWho .gm-card').forEach(c => c.classList.remove('sel'));
                     card.classList.add('sel');
                     state.who = card.dataset.val;
+                    state.relation = card.dataset.relation;
+                    state.pronoun = card.dataset.pronoun;
+                    state.pronounPoss = card.dataset.pronounPoss;
+                    q2Label.textContent = 'Which one is your ' + state.relation + '?';
+                    q3Label.textContent = 'When is ' + state.pronoun + ' wearing it?';
+                    q3Sub.textContent = 'What ' + state.pronoun + ' is doing, most days of the week.';
                     goToStep(q1, q2);
                 });
             });
-            document.querySelectorAll('#gmPersonality .gm-chip').forEach(chip => {
-                chip.addEventListener('click', () => {
-                    document.querySelectorAll('#gmPersonality .gm-chip').forEach(c => c.classList.remove('sel'));
-                    chip.classList.add('sel');
-                    state.personality = chip.textContent;
-                    goToStep(q2, q3);
-                    maybeReveal();
+
+            document.querySelectorAll('#gmPersona .gm-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const val = card.dataset.val;
+                    const idx = state.personas.indexOf(val);
+                    if (idx > -1) {
+                        state.personas.splice(idx, 1);
+                        card.classList.remove('sel');
+                    } else {
+                        if (state.personas.length >= 2) {
+                            const oldest = state.personas.shift();
+                            const oldestCard = document.querySelector('#gmPersona .gm-card[data-val="' + oldest + '"]');
+                            if (oldestCard) oldestCard.classList.remove('sel');
+                        }
+                        state.personas.push(val);
+                        card.classList.add('sel');
+                    }
+                    personaContinue.classList.toggle('show', state.personas.length > 0);
                 });
             });
-            document.querySelectorAll('#gmBudget .gm-seg').forEach(seg => {
-                seg.addEventListener('click', () => {
-                    document.querySelectorAll('#gmBudget .gm-seg').forEach(c => c.classList.remove('sel'));
-                    seg.classList.add('sel');
-                    state.budget = seg.textContent;
-                    maybeReveal();
+            personaContinue.addEventListener('click', () => {
+                goToStep(q2, q3);
+            });
+
+            document.querySelectorAll('#gmOccasion .gm-occasion-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('#gmOccasion .gm-occasion-card').forEach(c => c.classList.remove('sel'));
+                    card.classList.add('sel');
+                    state.occasion = card.dataset.val;
+                    revealResults();
                 });
             });
 
             function hashStr(s) { let h = 0; for (let i = 0; i < s.length; i++)h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }
-            function maybeReveal() {
-                if (!state.who || !state.personality || !state.budget) return;
-                summaryTitle.textContent = 'For your ' + state.personality.toLowerCase() + ' ' + state.who.toLowerCase();
-                summaryText.textContent = 'For someone who values ' + (personaCopy[state.personality] || 'timeless style') + '.';
+            function revealResults() {
+                if (!state.who || !state.personas.length || !state.occasion) return;
+                const personaLabel = state.personas.map(p => p.replace(/^The /, '').toLowerCase()).join(' and ');
+                summaryEyebrow.textContent = 'For your ' + state.relation;
+                summaryTitle.textContent = 'Three ' + state.pronoun + "'d actually wear";
+                summaryText.textContent = 'Ranked against ' + personaLabel + ', and where ' + state.pronoun + ' spends most days.';
                 goToStep(q3, document.getElementById('gmRight'));
                 summary.classList.add('show');
 
                 results.innerHTML = '';
                 const productPool = genderByWho[state.who] === 'women' ? productPoolWomen : productPoolMen;
-                const start = hashStr(state.personality + state.who) % productPool.length;
+                const start = hashStr(state.personas.join('') + state.occasion + state.who) % productPool.length;
                 const picks = productPool.length >= 3 ? [productPool[start], productPool[(start + 1) % productPool.length], productPool[(start + 2) % productPool.length]] : productPool;
+                const traits = state.personas.map(p => personaDesc[p] || 'timeless style').join(', ');
                 picks.forEach(p => {
                     const el = document.createElement('div');
                     el.className = 'gm-pcard';
-                    el.innerHTML = '<div class="frame"><img src="' + p.img + '" alt=""></div><div class="name">' + p.name + '</div><div class="desc">Perfect for someone who appreciates ' + (personaCopy[state.personality] || 'timeless elegance') + '.</div><div class="price">' + p.price + '</div><div class="dots">' + p.colors.map(c => '<span style="background:' + c + '"></span>').join('') + '</div><a href="#">View Details \u2192</a>';
+                    el.innerHTML = '<div class="frame"><img src="' + p.img + '" alt=""></div><div class="name">' + p.name + '</div><div class="desc">Suited for ' + state.occasion.toLowerCase() + ' days \u2014 ' + traits + '.</div><div class="price">' + p.price + ' <span style="text-decoration:line-through;font-weight:400;opacity:.55">' + p.mrp + '</span></div><div class="dots">' + p.colors.map(c => '<span style="background:' + c + '"></span>').join('') + '</div><a href="#">View Details \u2192</a>';
                     results.appendChild(el);
                 });
                 requestAnimationFrame(() => results.classList.add('show'));
@@ -3453,14 +3453,15 @@
             const copyBtn = document.getElementById('noteCopy');
             const rewriteBtn = document.getElementById('noteRewrite');
 
-            const personaCopy = { Minimal: 'clean lines and understated confidence', Classic: 'timeless elegance and everyday sophistication', Corporate: 'quiet authority in every meeting', Creative: 'character that speaks before they do', Bold: 'presence that never needs to try', Elegant: 'refinement that ages beautifully', Modern: 'contemporary edge, worn easily', Sporty: 'energy that keeps up with them', Confident: 'a quiet, steady kind of confidence' };
+            const personaDesc = { 'The Classic': 'ironed sleeves, notices yours', 'The Bold': 'walks in and you notice', 'The Active': 'up at five, unreasonably cheerful', 'The Easy One': 'owns three shirts, wears one' };
+            const naturalRelation = { brother: 'brother', sister: 'sister', him: 'someone special', her: 'someone special' };
 
             function giftContext() {
                 const whoEl = document.querySelector('#gmWho .gm-card.sel');
-                const personalityEl = document.querySelector('#gmPersonality .gm-chip.sel');
+                const personaEl = document.querySelector('#gmPersona .gm-card.sel');
                 return {
-                    who: whoEl ? whoEl.dataset.val.toLowerCase() : 'someone special',
-                    trait: personalityEl ? (personaCopy[personalityEl.textContent] || 'timeless style') : null
+                    who: whoEl ? (naturalRelation[whoEl.dataset.relation] || 'someone special') : 'someone special',
+                    trait: personaEl ? (personaDesc[personaEl.dataset.val] || 'timeless style') : null
                 };
             }
 
