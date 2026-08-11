@@ -446,6 +446,25 @@
             box-shadow: 0 6px 16px -8px rgba(180, 140, 50, .45)
         }
 
+        #ttcCta,
+        #heroCta {
+            background: linear-gradient(135deg, #4a141f 0%, #6d1f2f 45%, #8a2c3f 50%, #6d1f2f 55%, #4a141f 100%);
+            border: 1px solid rgba(215, 161, 46, .5);
+            color: #f3e4d0;
+            box-shadow: 0 8px 24px -10px rgba(74, 20, 31, .5)
+        }
+
+        #ttcCta:hover,
+        #heroCta:hover {
+            border-color: var(--gold-1);
+            box-shadow: 0 14px 34px -10px rgba(74, 20, 31, .65)
+        }
+
+        #ttcCta:active,
+        #heroCta:active {
+            box-shadow: 0 6px 16px -8px rgba(74, 20, 31, .55)
+        }
+
         .ttc-actions {
             display: flex;
             align-items: center;
@@ -2142,7 +2161,7 @@
             <span class="eb">Bruno Milano · Raksha Bandhan</span>
             <h1>The Rakhi that never comes off.</h1>
             <p>Every other rakhi comes off in a week. A Bruno Milano watch stays on the wrist all year.</p>
-            <button class="ttc-cta" style="opacity:1;transform:none;margin-top:8px"
+            <button class="ttc-cta" id="heroCta" style="opacity:1;transform:none;margin-top:8px"
                 onclick="document.getElementById('gm').scrollIntoView({behavior:'smooth'})">Find Their Perfect Watch
                 →</button>
         </div>
