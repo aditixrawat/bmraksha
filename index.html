@@ -338,12 +338,12 @@
             flex: 1;
             appearance: none;
             border: 1px solid rgba(215, 161, 46, .5);
-            background: var(--accent-primary-gradient);
+            background: linear-gradient(135deg, #4a141f 0%, #6d1f2f 45%, #8a2c3f 50%, #6d1f2f 55%, #4a141f 100%);
             border-radius: 999px;
             padding: 13px 18px;
             font-family: var(--font-sans);
             font-size: 14px;
-            color: #2c2412;
+            color: #f3e4d0;
             cursor: pointer;
             transition: border-color .25s ease, box-shadow .25s ease
         }
@@ -2095,64 +2095,6 @@
             box-shadow: 0 6px 18px rgba(215, 161, 46, 0.3);
         }
 
-        /* Trust Banner */
-        .bs-trust {
-            margin-top: 64px;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            padding: 24px 32px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(215, 161, 46, 0.18);
-            border-radius: 12px;
-            text-align: left;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 1s cubic-bezier(.16, 1, .3, 1) .8s, transform 1s cubic-bezier(.16, 1, .3, 1) .8s;
-        }
-
-        .bs.in-view .bs-trust {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .bs-trust-item {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .bs-trust-icon {
-            font-size: 22px;
-            color: var(--gold-1);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: rgba(215, 161, 46, 0.12);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-            border: 1px solid rgba(215, 161, 46, 0.25);
-        }
-
-        .bs-trust-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .bs-trust-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #fdf9f2;
-        }
-
-        .bs-trust-desc {
-            font-size: 12px;
-            color: rgba(253, 249, 242, 0.6);
-            margin-top: 2px;
-        }
-
         @media(max-width: 1100px) {
             .bs-grid {
                 grid-template-columns: repeat(2, 1fr);
@@ -2162,11 +2104,6 @@
         @media(max-width: 768px) {
             .bs {
                 padding: 60px 20px;
-            }
-            .bs-trust {
-                grid-template-columns: 1fr;
-                gap: 18px;
-                padding: 20px;
             }
         }
 
@@ -2606,30 +2543,6 @@
                             →</a>
                     </div>
                 </article>
-            </div>
-
-            <div class="bs-trust">
-                <div class="bs-trust-item">
-                    <div class="bs-trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="13" height="10"></rect><path d="M14 9h4l3 3v4h-7z"></path><circle cx="6" cy="18" r="1.6"></circle><circle cx="17" cy="18" r="1.6"></circle></svg></div>
-                    <div class="bs-trust-text">
-                        <span class="bs-trust-title">Free Shipping</span>
-                        <span class="bs-trust-desc">On all orders across India</span>
-                    </div>
-                </div>
-                <div class="bs-trust-item">
-                    <div class="bs-trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"></path></svg></div>
-                    <div class="bs-trust-text">
-                        <span class="bs-trust-title">2-Year Warranty</span>
-                        <span class="bs-trust-desc">Covered against manufacturing defects</span>
-                    </div>
-                </div>
-                <div class="bs-trust-item">
-                    <div class="bs-trust-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h11a5 5 0 0 1 5 5v0a5 5 0 0 1-5 5H9"></path><polyline points="7 6 3 10 7 14"></polyline></svg></div>
-                    <div class="bs-trust-text">
-                        <span class="bs-trust-title">Easy Returns</span>
-                        <span class="bs-trust-desc">7-day hassle-free return policy</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
